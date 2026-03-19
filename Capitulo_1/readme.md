@@ -161,24 +161,23 @@ R = Deve usar aspas duplas `"`
 
 Resposta = D 
 
-13. Um programa em C, que tenha comentários no seu código, é, em relação a outro que não os tenha,
-a) Mais rápido para executar.
-b) Mais lento para executar.
-c) Executado praticamente à mesma velocidade, pois os comentários exige muma utilização ínfima
-da CPU.
-d) Executado à mesma velocidade, pois os comentários são simplesmente ignorados pelo compilador, não havendo qualquer reflexo deles no tempo de execução.
+##13. Um programa em C, que tenha comentários no seu código, é, em relação a outro que não os tenha,
+-a) Mais rápido para executar.
+-b) Mais lento para executar.
+-c) Executado praticamente à mesma velocidade, pois os comentários exige muma utilização ínfima da CPU.
+-d) Executado à mesma velocidade, pois os comentários são simplesmente ignorados pelo compilador, não havendo qualquer reflexo deles no tempo de execução.
 
-Resposta = D 
+##Resposta = D
 
-14. Indique se são verdadeiras ou falsas as seguintes afirmações:
+##14. Indique se são verdadeiras ou falsas as seguintes afirmações:
 Os Comentários
-a) só podem ocupar uma única linha. falso
-b) podem ocupar várias linhas. verdadeiro 
-c) podem conter outros comentários dentro. verdadeiro
-d) começam por /* e terminam com /.* verdadeiro 
-e) não têm qualquer influência na velocidade de execução de um programa. verdadeiro 
-f) têm que começar no início de uma linha. falso
-g) quando ocupam apenas uma linha não precisam terminar com /.* verdadeiro 
+-a) só podem ocupar uma única linha. falso
+-b) podem ocupar várias linhas. verdadeiro 
+-c) podem conter outros comentários dentro. verdadeiro
+-d) começam por /* e terminam com /.* verdadeiro 
+-e) não têm qualquer influência na velocidade de execução de um programa. verdadeiro 
+-f) têm que começar no início de uma linha. falso
+-g) quando ocupam apenas uma linha não precisam terminar com /.* verdadeiro 
 
 ---
 
