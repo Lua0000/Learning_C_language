@@ -153,11 +153,11 @@ R = Deve usar aspas duplas `"`
 
 ---
 
-12. Os comentários devem ser escritos
-a) Antes de qualquer instrução do programa.
-b) Depois de todas as instruções.
-c) Antes do main.
-d) Sempre que o programador ache necessário ou conveniente.
+## 12. Os comentários devem ser escritos
+- a) Antes de qualquer instrução do programa.
+- b) Depois de todas as instruções.
+- c) Antes do main.
+- d) Sempre que o programador ache necessário ou conveniente.
 
 Resposta = D 
 
