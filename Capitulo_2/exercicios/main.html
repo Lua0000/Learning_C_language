@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Capítulo 2 - Linguagem C</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    margin:40px;
+}
+
+.pergunta{
+    color:blue;
+    font-weight:bold;
+    margin-top:20px;
+}
+
+.resposta{
+    color:green;
+    margin-bottom:15px;
+}
+
+pre{
+    background:#f4f4f4;
+    padding:12px;
+    border-radius:6px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Capítulo 2 - Linguagem C</h1>
+
+<p class="pergunta">1. Indique quais das seguintes declarações estão corretas:</p>
+
+<p class="resposta">
+a) y int; — Incorreta<br>
+b) int; — Incorreta<br>
+c) integerx; — Incorreta<br>
+d) inta, b; — Incorreta<br>
+e) float f, g, c; — Correta<br>
+f) char chl = ch2 - 'A'; — Incorreta<br>
+g) char chi = 'A', ch2 = 'A'; — Correta
+</p>
+
+
+<p class="pergunta">2. Uma variável inteira, quando é declarada, é sempre iniciada com:</p>
+
+<p>
+a) 0<br>
+b) 1<br>
+c) Um valor aleatório<br>
+d) Um valor negativo
+</p>
+
+<p class="resposta">Resposta = C</p>
+
+
+<p class="pergunta">3. Identificadores corretos e incorretos:</p>
+
+<p class="resposta">
+a) Valor — Correto<br>
+b) &XN2X — Incorreto<br>
+c) dez% — Incorreto<br>
+d) a+b — Incorreto<br>
+e) _Kabonga — Correto<br>
+f) MENOS — Correto<br>
+g) 10a — Incorreto<br>
+h) alO — Correto<br>
+i) main — Incorreto<br>
+j) F1 — Correto
+</p>
+
+
+<p class="pergunta">4. O nome de uma variável:</p>
+
+<p class="resposta">
+a) Deve indicar o que armazena — Correto<br>
+b) Deve ser o menor possível — Incorreto<br>
+c) Deve ser o maior possível — Incorreto<br>
+d) Deve ser o mais explícito possível — Correto<br>
+e) Deve ser todo em maiúsculas — Incorreto<br>
+f) Pode começar com underscore (_) — Correto<br>
+g) Pode conter mais de um caractere — Correto
+</p>
+
+
+<p class="pergunta">5. Associe os tipos aos formatos:</p>
+
+<p class="resposta">
+int → %d<br>
+float → %f<br>
+char → %c<br>
+long int → %ld<br>
+short int → %hd<br>
+signed long int → %ld
+</p>
+
+
+<p class="pergunta">6. Verdadeiro ou falso:</p>
+
+<p class="resposta">
+a) V<br>
+b) F<br>
+c) V<br>
+d) V<br>
+e) F<br>
+f) F<br>
+g) F<br>
+h) V
+</p>
+
+
+<p class="pergunta">7. Identifique os erros de compilação:</p>
+
+<p class="pergunta">7.1</p>
+
+<pre>
+#include <stdio.h>
+
+main () {
+    int x, y, x;
+}
+</pre>
+
+<p class="resposta">
+R = A variável x foi declarada duas vezes.
+</p>
+
+
+<p class="pergunta">7.2</p>
+
+<pre>
+#include <stdio.h>
+
+main ()
+{
+    int x, y;
+    float int = 5.23;
+    printf("%f", int);
+}
+</pre>
+
+<p class="resposta">
+R = "int" é palavra reservada e não pode ser usada como variável. Além disso, há inconsistência de tipo.
+</p>
+
+
+<p class="pergunta">7.3</p>
+
+<pre>
+#include <stdio.h>
+
+main ()
+{
+    int x=y=z=0;
+    printf("%d %d %d\n", x, y, z);
+}
+</pre>
+
+<p class="resposta">
+R = Declaração incorreta. O correto seria:<br>
+int x, y, z;<br>
+x = y = z = 0;
+</p>
+
+
+<p class="pergunta">8. Possíveis causas de mau funcionamento:</p>
+
+<p class="pergunta">8.1</p>
+
+<pre>
+#include <stdio.h>
+
+main ()
+{
+    int n;
+    scanf("Introduza um N° %d", &n);
+    printf("O n° = %d\n", n);
+}
+</pre>
+
+<p class="resposta">
+R = scanf foi usado como printf. scanf serve apenas para entrada de dados.
+</p>
+
+
+<p class="pergunta">8.2</p>
+
+<pre>
+main ()
+{
+    int n;
+    printf("Introduza um N");
+    scanf("%d\n", &n);
+    printf("O n° = %d\n", n);
+}
+</pre>
+
+<p class="resposta">
+R = O uso de \n no scanf pode causar espera por mais entrada.
+</p>
+
+
+<p class="pergunta">8.3</p>
+
+<pre>
+#include <stdio.h>
+
+main()
+{
+    int n;
+    printf("Introduza um N");
+    scanf("%f", &n);
+    printf("O n° = %f\n", n);
+}
+</pre>
+
+<p class="resposta">
+R = Tipo incorreto no scanf (%f para int) e erro de formatação no printf.
+</p>
+
+
+<p class="pergunta">9. Programa que lê uma data e mostra no formato dd/mm/aaaa:</p>
+
+<pre>
+#include <stdio.h>
+
+int main() {
+    
+    int Dia, Mes, Ano;
+    
+    printf("Digite o dia: ");
+    scanf("%d", &Dia);
+    
+    printf("Digite o mes: ");
+    scanf("%d", &Mes);
+    
+    printf("Digite o ano: ");
+    scanf("%d", &Ano);
+    
+    printf("Data: %d/%d/%d\n", Dia, Mes, Ano);
+
+    return 0;
+}
+</pre>
+
+
+<p class="pergunta">10. Converter data de aaaa-mm-dd para dd/mm/aaaa:</p>
+
+<pre>
+#include <stdio.h>
+
+int main() {
+    
+    int Ano, Mes, Dia;
+    
+    printf("Ano: ");
+    scanf("%d", &Ano);
+
+    printf("Mes: ");
+    scanf("%d", &Mes);
+
+    printf("Dia: ");
+    scanf("%d", &Dia);
+    
+    printf("Formato AAAA-MM-DD: %d-%d-%d\n", Ano, Mes, Dia);
+    printf("Formato DD/MM/AAAA: %d/%d/%d\n", Dia, Mes, Ano);
+
+    return 0;
+}
+</pre>
+
+</body>
+</html>

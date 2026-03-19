@@ -3,7 +3,7 @@ a) y int; Incorreta
 b) int; Incorreta
 c) integerx; Incorreta 
 d) inta, b; Incorreto 
-e) float f, g , c; 
+e) float f, g , c; Correto 
 f) char chl=ch2-A'; Incorreto 
 g) char chi = 'A', ch2 = ’A’; Correto 
 
@@ -15,30 +15,29 @@ b) 1 (Um)
 c) Um valor aleatório
 d) Um valor negativo
 
-resposta = c
+resposta = C
 
 3. Indique, na seguinte lista, quais os identificadores corretos e incorretos de variáveis:
 a) Valor = Correto 
 b) &XN2X = Incorreto 
 c) dez% = Incorreto
 d) a+b = Incorreto
-e) Kabonga = Correto
+e) _Kabonga = Correto
 j) MENOS = Correto 
-g) 10a = Correto 
+g) 10a = Incorreto 
 h) alO = Correto
 i) main = Incorreto
 j) F1 = Correto 
 
 4. O nome de uma variável...
-a) deve indicar aquilo que ela armazena
-b) deve ser o menor possível
-c) deve ser o maior possível
-d) deve ser o mais explícito possível
-e) deve ser todo escrito em maiúsculas
-f) pode, mas não deve, começar por underscore Q
-g) pode conter mais do que um caractere
+a) deve indicar aquilo que ela armazena - Correto 
+b) deve ser o menor possível - Incorreto
+c) deve ser o maior possível - Incorreto
+d) deve ser o mais explícito possível - Correto 
+e) deve ser todo escrito em maiúsculas - Incorreto 
+f) pode, mas não deve, começar por underscore Q - Correto
+g) pode conter mais do que um caractere - Correto 
 
-R = A 
 5. Associe os seguintes tipos aos correspondentes formatos de leitura e escrita.
 int %e
 float %ld
@@ -61,7 +60,7 @@ f) Uma variável do tipo char pode armazenar vários caracteres, desde que todos
 g) Uma variável do tipo char pode armazenar vários caracteres, desde que sejam caracteres especiais.
 h) O operador módulo (%) não pode ser utilizado em reais.
 
-Resposta = A = V  , B = F, C = V, D = V, E = F, F = v, G = F, H = F
+Resposta = A = V  , B = F, C = V, D = V, E = F, F = F, G = F, H = V
 
 7. Identifique os erros de compilação que seriam detectados nos seguintes programas:
 
@@ -73,7 +72,7 @@ main () {
 
 }
 
-r = Declarou variavel mas não atribuiu nenhum valor
+r = Variavel X declarada duas vezes
 
 7.2
 #include <stdio.h>
@@ -84,7 +83,8 @@ main ()
     printf ("%f",int);
 }
 
-R = Declarou variavel inteira mas atribuiu a um numero float.
+R = Int é uma palavra reservada da linguagem C portanto não pode ser usada para criar variaveis,
+Declarou variavel inteira mas atribuiu a um numero float.
 
 7.3
 
@@ -152,8 +152,44 @@ printf("0 n° = %f\n",n);
 R = Falta o int main(), também falta aspas duplas no final do printf, o scanf
 está lendo um valor float sendo que a variavel é inteira.
 
-9. Escreva umprograma que solicite ao usuário uma determinada data e amostre em seguida no formato
+9. Escreva um programa que solicite ao usuário uma determinada data e amostre em seguida no formato
 dd/mm/aaaa.
 
-R = 
+R = #include <stdio.h>
 
+int main() {
+	
+	int Dia, Mes, Ano;
+	
+	printf("Digite uma data: ");
+	scanf("%d", &Dia);
+	
+	printf("Digite um mes: ");
+	scanf("%d", &Mes);
+	
+	printf("Digite um ano: ");
+	scanf("%d", &Ano);
+	
+	printf("A data: %d/%d/%d\n", Dia, Mes, Ano);
+	return 0;
+}
+
+10. Escreva um programa que solicite ao usuário uma determinada data no formato aaaa-mm-dd e a
+mostre em seguida no formato dd/mm/aaaa.
+
+R = #include <stdio.h>
+
+int main() {
+	
+	int Ano, Mes, Dia;
+	
+	printf("Ano: ");
+	scanf("%d", &Ano);
+	printf("Mes: ");
+	scanf("%d", &Mes);
+	printf("Dia: "); 
+	scanf("%d", &Dia);
+	
+	printf("Formato AAAA-MM-DD: %d-%d-%d Formato DD-MM-AA: %d/%d/%d", Ano, Mes, Dia, Dia, Mes, Ano);
+	return 0;
+}

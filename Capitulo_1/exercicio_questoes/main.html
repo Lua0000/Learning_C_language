@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exercícios de Linguagem C</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    margin:40px;
+}
+
+.pergunta{
+    color:blue;
+    font-weight:bold;
+    margin-top:20px;
+}
+
+.resposta{
+    color:green;
+    margin-bottom:15px;
+}
+
+pre{
+    background:#f4f4f4;
+    padding:12px;
+    border-radius:6px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Exercícios de Linguagem C</h1>
+
+<p class="pergunta">1. Qual a função que deve estar presente em todos os programas em C?</p>
+<p class="resposta">R = main()</p>
+
+<p class="pergunta">2. Como devem terminar todas as instruções em C?</p>
+<p class="resposta">R = Em ponto e vírgula ;</p>
+
+<p class="pergunta">3. Como é delimitado um bloco em C?</p>
+<p class="resposta">R = Entre chaves { }</p>
+
+<p class="pergunta">4. A função printf é parte integrante da linguagem C?</p>
+<p class="resposta">R = A função printf faz parte da biblioteca stdio.h</p>
+
+<p class="pergunta">5. Para que serve a linha #include &lt;stdio.h&gt; num programa?</p>
+<p class="resposta">R = Biblioteca de entrada e saída de dados.</p>
+
+<p class="pergunta">6. A extensão .h indica que o arquivo correspondente é composto por ... ?</p>
+<p class="resposta">R = header</p>
+
+<p class="pergunta">7. Os arquivos com extensão .h são também conhecidos por ... ?</p>
+<p class="resposta">R = Header files</p>
+
+<p class="pergunta">8. Por que razão não se utilizou a linha #include &lt;stdio.h&gt; no programa progOlOl.c?</p>
+<p class="resposta">R = Pois o programa não faz nada.</p>
+
+<p class="pergunta">9. Dentro de uma string pode-se usar letras maiúsculas? Justifique.</p>
+<p class="resposta">R = Sim, pois armazenam dados como nomes, cidades e frases que exigem letras maiúsculas.</p>
+
+<p class="pergunta">10. Qual o significado de stdio?</p>
+<p class="resposta">R = standard input/output</p>
+
+
+<p class="pergunta">11. Identifique os erros de compilação nos seguintes programas:</p>
+
+<p class="pergunta">11.1</p>
+
+<pre>
+tfinclude <stdio.h>
+Main ()
+{
+    printf("Hello World");
+}
+</pre>
+
+<p class="resposta">R = #include foi escrito errado e a função principal deveria ser int main().</p>
+
+
+<p class="pergunta">11.2</p>
+
+<pre>
+#include <stdio.h>
+main
+{
+    printf("Hello World");
+}
+</pre>
+
+<p class="resposta">R = A função main não possui parênteses. O correto seria int main().</p>
+
+
+<p class="pergunta">11.3</p>
+
+<pre>
+#include <stdio.h>
+main ()
+{
+    print("Hello World")
+</pre>
+
+<p class="resposta">R = A função print não existe em C (deveria ser printf), falta ponto e vírgula e fechar as chaves.</p>
+
+
+<p class="pergunta">11.4</p>
+
+<pre>
+#include <stdio.h>
+main ()
+{
+    printf("Hello") ("World");
+}
+</pre>
+
+<p class="resposta">R = O printf foi usado de forma incorreta. O correto seria colocar tudo dentro do mesmo printf.</p>
+
+
+<p class="pergunta">11.5</p>
+
+<pre>
+#include <stdio.h>
+main ()
+{
+    printf("Hello World");
+</pre>
+
+<p class="resposta">R = O bloco não foi fechado e falta return 0; no final do programa.</p>
+
+
+<p class="pergunta">11.6</p>
+
+<pre>
+#include <stdio.h>
+main ()
+{
+    printf("Hello World");
+}
+</pre>
+
+<p class="resposta">R = A função principal deveria ser declarada como int main().</p>
+
+
+<p class="pergunta">11.7</p>
+
+<pre>
+#include <stdio.h>
+main ()
+{
+    printf(Hello World);
+}
+</pre>
+
+<p class="resposta">R = A string não está entre aspas duplas ("Hello World").</p>
+
+
+<p class="pergunta">11.8</p>
+
+<pre>
+#include <stdio.h>
+main ()
+{
+    printf("Hello World")
+}
+</pre>
+
+<p class="resposta">R = Falta ponto e vírgula após o printf.</p>
+
+
+<p class="pergunta">11.9</p>
+
+<pre>
+include <stdio.h>
+main ()
+{
+    printf("Hello World");
+}
+</pre>
+
+<p class="resposta">R = A biblioteca foi chamada incorretamente. O correto é #include &lt;stdio.h&gt;.</p>
+
+
+<p class="pergunta">11.10</p>
+
+<pre>
+#include <stdio.h> V
+main ()
+{
+    printf('Hello World');
+}
+</pre>
+
+<p class="resposta">R = Deve-se usar aspas duplas em strings ("Hello World") e remover o caractere extra.</p>
+
+
+<p class="pergunta">12. Os comentários devem ser escritos:</p>
+
+<p>
+a) Antes de qualquer instrução do programa.<br>
+b) Depois de todas as instruções.<br>
+c) Antes do main.<br>
+d) Sempre que o programador achar necessário ou conveniente.
+</p>
+
+<p class="resposta">Resposta = D</p>
+
+
+<p class="pergunta">13. Um programa em C que tenha comentários no código é:</p>
+
+<p>
+a) Mais rápido para executar.<br>
+b) Mais lento para executar.<br>
+c) Executado praticamente à mesma velocidade.<br>
+d) Executado à mesma velocidade pois os comentários são ignorados pelo compilador.
+</p>
+
+<p class="resposta">Resposta = D</p>
+
+
+<p class="pergunta">14. Indique se são verdadeiras ou falsas:</p>
+
+<p class="resposta">
+a) Só podem ocupar uma única linha — Falso<br>
+b) Podem ocupar várias linhas — Verdadeiro<br>
+c) Podem conter outros comentários dentro — Verdadeiro<br>
+d) Começam por /* e terminam com */ — Verdadeiro<br>
+e) Não influenciam na velocidade de execução — Verdadeiro<br>
+f) Devem começar no início da linha — Falso<br>
+g) Comentários de uma linha não precisam terminar com */ — Verdadeiro
+</p>
+
+
+<p class="pergunta">15. Programa que imprime:</p>
+
+<pre>
+Bem-vindos ao /Mundo\ da programação em "C"
+</pre>
+
+<pre>
+#include <stdio.h>
+
+int main(){
+
+    printf("Bem-vindos ao /Mundo\\ da programacao em \"C\"");
+
+    return 0;
+}
+</pre>
+
+
+<p class="pergunta">16. Programa que imprime uma árvore:</p>
+
+<pre>
+  *
+ ***
+*****
+ /|\
+</pre>
+
+<pre>
+#include <stdio.h>
+
+int main(){
+
+    printf("  *\n");
+    printf(" ***\n");
+    printf("*****\n");
+    printf(" /|\\\n");
+
+    return 0;
+}
+</pre>
+
+
+<p class="pergunta">17. Programa que imprime:</p>
+
+<pre>
+Total       =        100%
+IVA         =        17%
+IRS         =        15%
+-------------------------
+Líq.        =        68%
+</pre>
+
+<pre>
+#include <stdio.h>
+
+int main(){
+
+    printf("Total = 100%%\n");
+    printf("IVA   = 17%%\n");
+    printf("IRS   = 15%%\n");
+    printf("-------------------------\n");
+    printf("Liq.  = 68%%\n");
+
+    return 0;
+}
+</pre>
+
+
+<p class="pergunta">18. Experimente a função puts("Hello World") e explique a diferença para printf.</p>
+
+<pre>
+#include <stdio.h>
+
+int main(){
+
+    puts("Hello World");
+
+    return 0;
+}
+</pre>
+
+<p class="resposta">
+Diferença: puts imprime apenas uma string simples e adiciona quebra de linha automaticamente.
+printf permite formatação usando parâmetros como %d, %f e %s.
+</p>
+
+</body>
+</html>
