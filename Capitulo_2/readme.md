@@ -50,29 +50,31 @@ g) pode conter mais de um caractere → Correto
 
 ---
 
-5. Associe os seguintes tipos aos correspondentes formatos de leitura e escrita.
-int %e
-float %ld
-char %f
-short int %d
-long int %hd
-signed long int %c
-R = int = %d, float = %f, char = %c, long int = %ld, short int = %hd,  singed long int = %ld 
+5. Associe os tipos aos formatos:
+
+int → %d
+float → %f
+char → %c
+long int → %ld
+short int → %hd
+signed long int → %ld
 
 ---
-6. Indique quais das seguintes afirmações são verdadeiras e quais são falsas.
-a) O tipo float reserva espaço em memória para um real com precisão simples, enquanto o tipo double reserva espaço para uma variável com precisão dupla. -> Verdadeiro ✔️
-b) O tipo char pode ter os prefixos long e short. -> Falsa ❌
-c) O tipo char pode ter os prefixos signed e unsigned. -> Verdadeiro ✔️
-d) Uma variável declarada como unsigned pode comportar valores superiores a uma outra que seja declarada como signed. -> Verdadeiro ✔️
-e) Uma variável do tipo char pode armazenar caracteres individuais ou conjuntos de caracteres também denominados por strings. -> Falso ❌
-f) Uma variável do tipo char pode armazenar vários caracteres, desde que todos eles sejam caracteres ASCII. -> Falso ❌
-g) Uma variável do tipo char pode armazenar vários caracteres, desde que sejam caracteres especiais. -> Falso ❌
-h) O operador módulo (%) não pode ser utilizado em reais. -> Verdadeiro ✔️
 
---
+6. Verdadeiro ou falso:
 
-7. Identifique os erros de compilação que seriam detectados nos seguintes programas:
+a) Verdadeiro ✔️
+b) Falso ❌
+c) Verdadeiro ✔️
+d) Verdadeiro ✔️
+e) Falso ❌
+f) Falso ❌
+g) Falso ❌
+h) Verdadeiro ✔️
+
+---
+
+7. Identifique os erros de compilação:
 
 7.1
 
@@ -118,6 +120,7 @@ main ()
 ```
 
 R = Forma incorreta de declarar múltiplas variáveis
+
 Correto:
 
 ```c
@@ -141,7 +144,7 @@ main ()
 }
 ```
 
-R = Uso errado do `scanf` (parecendo `printf`)
+R = Uso incorreto do `scanf` (como se fosse `printf`)
 
 ---
 
@@ -157,7 +160,7 @@ main ()
 }
 ```
 
-R = `\n` no scanf causa espera extra
+R = `\n` no scanf faz o programa esperar mais entrada
 
 ---
 
@@ -182,50 +185,8 @@ R =
 
 ---
 
-9. Programa (data dd/mm/aaaa):
+9. Programa (dd/mm/aaaa):
 
 ```c
-#include <stdio.h>
-
-int main() {
-    int Dia, Mes, Ano;
-
-    printf("Digite uma data: ");
-    scanf("%d", &Dia);
-
-    printf("Digite um mes: ");
-    scanf("%d", &Mes);
-
-    printf("Digite um ano: ");
-    scanf("%d", &Ano);
-
-    printf("A data: %d/%d/%d\n", Dia, Mes, Ano);
-    return 0;
-}
-```
-
----
-
-10. Programa (aaaa-mm-dd → dd/mm/aaaa):
-
-```c
-#include <stdio.h>
-
-int main() {
-    int Ano, Mes, Dia;
-
-    printf("Ano: ");
-    scanf("%d", &Ano);
-
-    printf("Mes: ");
-    scanf("%d", &Mes);
-
-    printf("Dia: ");
-    scanf("%d", &Dia);
-
-    printf("Formato AAAA-MM-DD: %d-%d-%d\n", Ano, Mes, Dia);
-    printf("Formato DD/MM/AAAA: %d/%d/%d\n", Dia, Mes, Ano);
-
-    return 0;
-}
+#include <stdio.
 ```
