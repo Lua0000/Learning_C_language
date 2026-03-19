@@ -1,9 +1,20 @@
+
+
+1. Qual a função que deve estar presente em todos os programas em C? R = main() 
+2. Como devem terminar todas as instruções em C? R = Em ponto e virgula ; 
+3. Como é delimitado um bloco em C? R = Entre chaves {}
+4. A função printf é parte integrante da linguagem C? R = A função printf faz parte da biblioteca stdio.h 
+5. Para que serve a linha #include <stdio.h> num programa? R = Biblioteca de entrada e saída de dados.
+6. A extensão .h indica que o arqtaivo correspondente é composto por ... ? R = header 
+7. Os arquivos com extensão .h são também conhecidos por ... ? R = Header files 
+8. Por que razão não se utilizou a linha #include <stdio.h> no programa progOlOl.c? R = Pois o programa não faz nada. 
+9. Dentro de uma string pode-se usar letras maiúsculas? Justifique. R = Sim, pois armazenam dados como nomes, cidades e frases que exigem letras maiúsculas. 
+10. Qual o significado de stdio? R = standard input/output
+
 11. Identifique os erros de compilação que seriam detectados nos seguintes programas:
 11.1
-/*
-★ Copyright: Asneira Suprema Software!!!
-*/
-tfinclude <stdio.h>
+
+#include <stdio.h>
 Main ()
 {
 printf ("Hello World");
@@ -12,9 +23,7 @@ printf ("Hello World");
 R = Pois a função não está escrita de maneira correta int main()
 
 11.2
-/*
-* Copyright: Asneira Suprema Software!!!
-*/
+
 #include <stdio.h>
 main
 {
@@ -26,9 +35,7 @@ R = A função não foi chamada de maneira correta int main()
 11.3
 
 
-/*
-* Copyright: Asneira Suprema Software!!!
-*/
+
 #include <stdio.h>
 main ()
 {
@@ -37,9 +44,7 @@ print ("Hello World")
 R= A função foi chamada corretamente mas o código está faltando ponto e virgula e fechar com chaves {}
 
 11.4
-/*
-* Copyright: Asneira Suprema Software!!!
-*/
+
 #include <stdio.h>
 main ()
 {
@@ -48,9 +53,7 @@ printf("Hello”) (" World");
 R = O printf não lê desse jeito, o certo seria separar dentro do mesmo parenteses ou colocar outro printf em baixo, e falta chaves também. 
 
 11.5
-/*
-* Copyright: Asneira Suprema Software!!!
-/*
+
 #include <stdio.h>
 main ()
 {
@@ -59,8 +62,7 @@ printf ("Hello World");
 R=  O programa não indica que terminou, deve se usar return 0;
 
 11.6 
-*/* Copyright: Asneira Suprema Software!!! */
-*/
+
 #include <stdio.h>
 main ()
 {
@@ -70,9 +72,7 @@ printf("Hello World");
 R = A função não está escrita de maneira correta, deveria ser int main()
 
 11.7
-/*
-* Copyright: Asneira Suprema Software!!!
-*/
+
 #include <stdio.h>
 main ()
 {
@@ -82,9 +82,7 @@ printf(Hello World);
 R = A string não está dentro de aspas duplas "" e também a função não foi chamada de maneira correta.  
 
 11.8
-/*
-* Copyright: Asneira Suprema Software!!!
-*/
+
 #include <stdio.h>
 main ()
 {
@@ -93,9 +91,6 @@ printf("Hello World")
 R = Está faltando ponto e virgula depois do parenteses
 
 11.9
-/*
-* Copyright: Asneira Suprema Software!!!
-*/
 include <stdio.h>
 main ()
 {
@@ -105,9 +100,6 @@ R = A biblioteca foi chamada de maneira incorreta, deve ser escrito desta forma 
 
 11.10 
 
-/*
-* Copyright: Asneira Suprema Software!!!
-*/
 #include <stdio.h> V
 main ()
 {
