@@ -41,3 +41,107 @@ if (x=0) {
   	printf("Y");
 ```
 resposta = Sim, o primeiro código verificado se o Valor de x é identico a 0, e na segunda a variavel X recebe 0
+
+## 7. [Exercício de Exame]
+A indentação facilita o processo de
+-a) Compilação
+-b) Linkagem
+-c) Execução
+-d) Programação  
+
+resposta = d
+
+##8. Um programa indentado é, em geral:
+-a) Mais rápido de executar que outro que não o seja.
+-b) Mais lento de executar que outro que não o seja.
+-c) Mais legível que outro que não seja indentado.
+-d) Menos legível que outro que não o seja.
+
+resposta = c
+
+##9. [Exercício de Exame] Sempre que um compilador detecta um código mal indentado:
+-a) Emite um erro.
+-b) Emite um "WARNING".
+-c) Escreve o arquivo corretamente indentado.
+-d) Um compilador não faz qualquer tipo de verificação da indentação
+
+resposta = d
+
+##10. Indique duas vantagens e duas desvantagens do if-else em relação ao switch.
+
+resposta = A primeira vantagem é que o if else permite usar qualquer tipo de comparação, >, <, >=, <=, e combinação ||, &&, Funciona com qualquer tipo de dado
+Você pode usar com int, float, char, ponteiros, as desvantagens comparadas ao switch é 1. Menos organizado para muitos casos fixos
+Quando há muitas opções (tipo menu: 1, 2, 3, 4...), o switch fica mais limpo e fácil de ler, outra desvantagem é que pode ser menos eficiente (em alguns casos)
+Um if-else com muitas condições pode ser mais lento, enquanto o switch pode ser otimizado pelo compilador.
+
+##11. Será que a instrução break, quando apresentada dentro de um if, passa a execução automaticamente
+para o else?
+
+resposta = Não, O break é usado para interromper estruturas de repetição (for, while, do-while) ou um switch.
+quando executado, ele sai imediatamente da estrutura em que está, não tendo relação direta com o if-else.
+
+##12. Qual o valor lógico que as seguintes expressões enviam para o ifl
+-a) if (10 == 5) -> false
+-b) if ( (2 + 3) == - ( -2 -3) -> True
+-c) if (x = 5) -> True
+-d) if (x = 0) -> False
+
+##13. Supondo x= 4, y= 6 e z= -1, qual o valor lógico das seguintes expressões:
+-a) if (x == 5) false
+-b) if (x == 5 || z<0) true
+-c) if (y-x+z-1) false
+-d) if (x == 4 || y>= z && ! (z) ) true
+
+##14. Escreva, utilizando um único if, o seguinte código.
+````c
+if (x == 0)
+  if (y <= 32)
+    printf("Sucesso!!!”)
+````
+resposta =
+````c
+if (x == 0 && y <= 32)
+    printf("Sucesso!!!");
+``````
+##15. Identifique os erros de compilação que seriam detectados nos seguintes programas.
+
+##15.1
+````c
+#include <stdio.h>
+main () {
+ int x;
+ if (x==0)
+  break;
+else
+  printf("X não é zero \n") ;
+}
+````
+resposta = 
+
+##15.2 
+````c 
+#include <stdio.h>
+main ()
+{
+int x;
+if (x==0) then
+printf("X é zero \n");
+else
+printf(”X não é zero \n");
+} 
+`````
+
+resposta = 
+##15.3 #include <stdio.h>
+````c
+
+main () { int x;
+switch (x)
+{
+case 1: printf("um"); break;
+case 2: printf("dois"); break;
+else: printf("Nem um nem dois");
+}
+````
+
+resposta = 
