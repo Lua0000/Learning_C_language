@@ -1,4 +1,4 @@
-# 📘 Capítulo 1 – Exercícios Corrigidos em C
+# 📘 Capítulo 1 – Questionário sobre C C
 
 1. Qual a função que deve estar presente em todos os programas em C?
    R = `main()`
