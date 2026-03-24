@@ -25,3 +25,19 @@ resposta = Sim, um bloco pode ser constituído por apenas uma instrução. e iss
 ## 5. Depois de um bloco é obrigatório o uso de ';' ?
 
 resposta = Não
+
+## 6. [Exercício de Exame]
+
+Existe alguma diferença no funcionamento dos seguintes trechos?
+```c
+if (x==0) {
+  printf("");
+} else {
+  	printf("Y");
+
+if (x=0) {
+  printf("x");
+} else {
+  	printf("Y");
+```
+resposta = Sim, o primeiro código verificado se o Valor de x é identico a 0, e na segunda a variavel X recebe 0
