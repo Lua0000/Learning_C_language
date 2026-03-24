@@ -44,26 +44,26 @@ resposta = Sim, o primeiro código verificado se o Valor de x é identico a 0, e
 
 ## 7. [Exercício de Exame]
 A indentação facilita o processo de
--a) Compilação
--b) Linkagem
--c) Execução
--d) Programação  
+- a) Compilação
+- b) Linkagem
+- c) Execução
+- d) Programação  
 
 resposta = d
 
 ##8. Um programa indentado é, em geral:
--a) Mais rápido de executar que outro que não o seja.
--b) Mais lento de executar que outro que não o seja.
--c) Mais legível que outro que não seja indentado.
--d) Menos legível que outro que não o seja.
+- a) Mais rápido de executar que outro que não o seja.
+- b) Mais lento de executar que outro que não o seja.
+- c) Mais legível que outro que não seja indentado.
+- d) Menos legível que outro que não o seja.
 
 resposta = c
 
 ##9. [Exercício de Exame] Sempre que um compilador detecta um código mal indentado:
--a) Emite um erro.
--b) Emite um "WARNING".
--c) Escreve o arquivo corretamente indentado.
--d) Um compilador não faz qualquer tipo de verificação da indentação
+- a) Emite um erro.
+- b) Emite um "WARNING".
+- c) Escreve o arquivo corretamente indentado.
+- d) Um compilador não faz qualquer tipo de verificação da indentação
 
 resposta = d
 
@@ -81,16 +81,16 @@ resposta = Não, O break é usado para interromper estruturas de repetição (fo
 quando executado, ele sai imediatamente da estrutura em que está, não tendo relação direta com o if-else.
 
 ##12. Qual o valor lógico que as seguintes expressões enviam para o if
--a) if (10 == 5) -> false
--b) if ( (2 + 3) == - ( -2 -3) -> True
--c) if (x = 5) -> True
--d) if (x = 0) -> False
+- a) if (10 == 5) -> false
+- ) if ( (2 + 3) == - ( -2 -3) -> True
+- c) if (x = 5) -> True
+- d) if (x = 0) -> False
 
 ## 13. Supondo x= 4, y= 6 e z= -1, qual o valor lógico das seguintes expressões:
--a) if (x == 5) false
--b) if (x == 5 || z<0) true
--c) if (y-x+z-1) false
--d) if (x == 4 || y>= z && ! (z) ) true
+- a) if (x == 5) false
+- ) if (x == 5 || z<0) true
+- c) if (y-x+z-1) false
+- d) if (x == 4 || y>= z && ! (z) ) true
 
 ## 14. Escreva, utilizando um único if, o seguinte código.
 ````c
