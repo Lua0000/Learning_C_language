@@ -153,15 +153,199 @@ break;
 resposta = em C o switch não usa else, o correto é usar default, 
 
 ## 16. Escreva um programa, de quatro formas distintas, que leia um inteiro e indique se esse inteiro é ou não igual a zero.
+```c
+#include <stdio.h>
+
+int main(void) {
+    int N;
+    printf("Digite um inteiro: ");
+    scanf("%d", &N);
+
+    if (N == 0 ) {
+        printf("e igual a 0");
+    } else {
+        printf("Não é igual a zero.");
+    }
+}
+````
+## 16.2
+````c 
+#include <stdio.h>
+
+int main(void) {
+    int N;
+    printf("Digite um Inteiro: ");
+    scanf("%d", &N);
+    if (N == 0? printf("É Zero"): printf("Não é zero"));
+}
+````
+## 16.3
+````c
+#include <stdio.h>
+int main(void) {
+
+    int R;
+    printf("Digite um inteiro: ");
+    scanf("%d", &R);
+    switch (R) {
+        case 0: printf("E zero\n");
+                break;
+            default:
+            printf("Nao e zero\n");
+
+    }
+
+}
+````
+## 16.4
+````c
+#include <stdio.h>
+
+int main(void) {
+    int n;
+    printf("Digite um inteiro: ");
+    scanf("%d", &n);
+
+    (n == 0) && printf("É zero\n");
+    (n != 0) && printf("Não é zero \n");
+
+    return 0;
+}
+`````
 ---
 ## 17. Reescreva o programa anterior com um switch.
+````c
+#include <stdio.h>
+int main(void) {
+
+    int R;
+    printf("Digite um inteiro: ");
+    scanf("%d", &R);
+    switch (R) {
+        case 0: printf("E zero\n");
+            break;
+        default:
+            printf("Nao e zero\n");
+
+    }
+
+}
+````
+
 ---
 ## 18. Escreva um programa que verifique se um ano é bissexto ou não.
+```` c
+#include <stdio.h>
+
+int main(void) {
+    int ano;
+    printf("Digite o ano para saber se e bissexto: ");
+    scanf("%d", &ano);
+
+    if (ano % 4 == 0 && ano % 100 != 0) {
+        printf("E bissexto\n");
+
+    } else {
+       if (ano % 400 == 0) {
+           printf("e bissexto");
+       } else {
+           printf("Nao e bissexto");
+       }
+    }
+}
+````
 
 ##19. Escreva um programa que indique o número de dias existentes em um mês (fevereiro = 28 dias).
 - 19.1 Usando apenas a instrução de teste if-else.
+ ```` c
+ #include <stdio.h>
+
+
+int main(void) {
+
+    int mes;
+    printf("Introduza o mes 1-12: ");
+    scanf("%d", &mes);
+    if (mes == 2) {
+        printf("O mes %d tem 28 dias\n", mes);
+    } else {
+        if (mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8|| mes == 10 || mes == 12) {
+            printf("O mes %d tem 31 dias\n", mes);
+        } else {
+            printf("O mes %d tem 30 dias\n", mes);
+        }
+    }
+}
+ ````
 - 19.2 Usando o switch.
+```` c
+#include <stdio.h>
+#include <stdio.h>
+
+
+int main(void) {
+    int mes;
+    printf("Introduza o mes 1-12: ");
+    scanf("%d", &mes);
+    switch (mes) {
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12: printf("O mes %d tem 31 dias", mes);
+            break;
+        case 4:
+        case 6:
+        case 9:
+        case 11: printf("O mes %d tem 30 dias", mes);
+            break;
+        case 2: printf("O mes %d tem 28 dias", mes);
+            break;
+            default: printf("Digite um valor valido \n");
+
+    }
+}
+````
 - 19.3 Usando o switch sem qualquer break.
+````c
+#include <stdio.h>
+
+int main() {
+    int mes, n_dias = 0;
+
+    printf("Introduza o número do mês 1-12: ");
+    scanf("%d", &mes);
+
+    switch (mes) {
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+            n_dias = 31;
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            if (n_dias == 0) n_dias = 30;
+        case 2:
+            if (n_dias == 0) n_dias = 28;
+        default:
+            if (mes < 1 || mes > 12) {
+                printf("mes invalido\n");
+                return 0;
+            }
+    }
+
+    printf("O mês %d tem %d dias.\n", mes, n_dias);
+
+    return 0;
+}
+````
 ---
 ##20. Escreva um programa que leia uma data e verifique se esta é válida ou não.
 
