@@ -52,7 +52,7 @@ A indentação facilita o processo de
 
 resposta = d
 ---
-##8. Um programa indentado é, em geral:
+## 8. Um programa indentado é, em geral:
 - a) Mais rápido de executar que outro que não o seja.
 - b) Mais lento de executar que outro que não o seja.
 - c) Mais legível que outro que não seja indentado.
@@ -60,7 +60,7 @@ resposta = d
 
 resposta = c
 ---
-##9. [Exercício de Exame] Sempre que um compilador detecta um código mal indentado:
+## 9. [Exercício de Exame] Sempre que um compilador detecta um código mal indentado:
 - a) Emite um erro.
 - b) Emite um "WARNING".
 - c) Escreve o arquivo corretamente indentado.
@@ -81,7 +81,7 @@ para o else?
 resposta = Não, O break é usado para interromper estruturas de repetição (for, while, do-while) ou um switch.
 quando executado, ele sai imediatamente da estrutura em que está, não tendo relação direta com o if-else.
 ---
-##12. Qual o valor lógico que as seguintes expressões enviam para o if
+## 12. Qual o valor lógico que as seguintes expressões enviam para o if
 - a) if (10 == 5) -> false
 - ) if ( (2 + 3) == - ( -2 -3) -> True
 - c) if (x = 5) -> True
@@ -105,7 +105,7 @@ if (x == 0 && y <= 32)
     printf("Sucesso!!!");
 ``````
 ---
-##15. Identifique os erros de compilação que seriam detectados nos seguintes programas.
+## 15. Identifique os erros de compilação que seriam detectados nos seguintes programas.
 
 ##15.1
 ````c
@@ -120,7 +120,7 @@ else
 ````
 resposta = Uso inválido do break fora de estruturas de repetição ou fora do switch
 ---
-##15.2 
+## 15.2 
 ````c 
 #include <stdio.h>
 main () {
@@ -134,9 +134,9 @@ else
 
 resposta = Na linguagem C não existe then
 ---
-##15.3 #include <stdio.h>
+##15.3 
 ````c
-
+#include <stdio.h>
 main () {
 int x;
 switch (x)
@@ -255,7 +255,7 @@ int main(void) {
 }
 ````
 
-##19. Escreva um programa que indique o número de dias existentes em um mês (fevereiro = 28 dias).
+## 19. Escreva um programa que indique o número de dias existentes em um mês (fevereiro = 28 dias).
 - 19.1 Usando apenas a instrução de teste if-else.
  ```` c
  #include <stdio.h>
@@ -347,5 +347,5 @@ int main() {
 }
 ````
 ---
-##20. Escreva um programa que leia uma data e verifique se esta é válida ou não.
+## 20. Escreva um programa que leia uma data e verifique se esta é válida ou não.
 
