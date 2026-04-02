@@ -47,3 +47,4 @@ Demonstrar, na prática, meu progresso e experiência na linguagem C, através d
 ## 📌 Observação
 
 Este repositório é focado em aprendizado contínuo. Erros fazem parte do processo 🚀
+Este repositório não tem todos os capitulos feitos, pois eu foquei apenas na sintaxe. 
