@@ -23,7 +23,7 @@ Aqui você encontrará:
 
 ## 🎯 Objetivo
 
-Demonstrar, na prática, meu progresso e experiência na linguagem C, através da resolução estruturada dos exercícios do livro.
+Foco em aprender a Sintaxe da linguagem, demonstrar, na prática, meu progresso e experiência na linguagem C, através da resolução estruturada dos exercícios do livro.
 
 ---
 
