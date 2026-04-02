@@ -202,3 +202,180 @@ int main(void)
     }
 }
 ````
+## 12. Escrevaumprograma completo em C que solicite ao usuário dois númerosinteiros entre 0 e 255 e escreva na tela todos os caracteres da tabela ASCII cujos códigos variem entre os dois números introduzidos, escrevendo em cada linha o código ASCII e o caractere correspondente.
+
+R = 
+````c
+#include <stdio.h>
+
+int main(void){
+    int i;
+    int f;
+
+    printf("Digite dois numeros inteiros entre 0 e 255> \n");
+    printf("Inicio: ");
+    scanf("%d", &i);
+    printf("Fim: ");
+    scanf("%d", &f);
+
+    if(i <= f) {
+        while (i <= f){
+            printf("%d -> %c\n", i, (char)i);
+            i++;
+        }
+    } 
+    else {
+        while (i >= f){
+            printf("%d -> %c\n", i, (char)i);
+            i--;
+        }
+    }
+
+    return 0;
+}
+````
+
+## 13. Qual a diferença (se existir) entre as duas seguintes instruções: x = ++i e x = i++? Dê exemplos.
+
+13. Diferença entre x = ++i e x = i++
+++i → pré-incremento (incrementa primeiro, depois usa)
+i++ → pós-incremento (usa primeiro, depois incrementa)
+Exemplo:
+int i = 5;
+int x = ++i; // i vira 6, x = 6
+int i = 5;
+int x = i++; // x = 5, i vira 6
+14. Se x estiver isolado, ++x e x++ são equivalentes?
+
+✔ Sim.
+
+Se não estiver dentro de uma expressão:
+
+x++;
+++x;
+
+👉 ambos só incrementam x em 1.
+
+15. Pode usar ++ e -- em constantes?
+
+❌ Não.
+
+Ex:
+
+++5;   // inválido
+10--;  // inválido
+
+Só funciona em variáveis.
+
+16. Diferença entre a = -2 e a -= 2
+a = -2 → atribui o valor -2
+a -= 2 → subtrai 2 do valor atual de a
+Exemplo:
+a = 5;
+a = -2;   // a vira -2
+a = 5;
+a -= 2;   // a vira 3
+17. Resultado do programa
+n = 0;
+do {
+    printf("...");
+    n = n + 1;
+} while (n != 0);
+Análise:
+começa com n = 0
+entra no do-while pelo menos 1 vez
+incrementa n → 1
+condição n != 0 continua sempre verdadeira
+loop infinito
+
+✔ Resultado: loop infinito
+
+18. Diferença entre os dois códigos
+Código 1:
+i = 0;
+while (i++)
+    printf("%d\n", i);
+usa valor antigo de i
+começa com 0 → condição falsa logo no início
+
+✔ não executa nada
+
+Código 2:
+i = 0;
+while (++i)
+    printf("%d\n", i);
+incrementa antes de testar
+vira 1, 2, 3...
+
+✔ loop infinito (até overflow ou interrupção)
+
+19. O que faz o código
+for (i = 1; i <= 200; i++) ;
+printf("%d\n", i);
+
+⚠ Tem um ; no for!
+
+Isso significa:
+
+o for não executa nada
+só incrementa i até 201
+depois imprime
+
+✔ Resultado:
+
+201
+20. Quantas vezes executa
+20.1
+for (i = 1; i <= 20; i++)
+
+✔ 20 vezes
+
+20.2
+for (i = 1; i <= 20; i += 2)
+
+Valores: 1,3,5,...,19
+✔ 10 vezes
+
+20.3
+for (i = -20; i <= 20; i++)
+
+De -20 até 20:
+✔ 41 vezes
+
+20.4
+for (i = 1; i <= 10; i++)
+
+✔ 10 vezes
+
+20.5
+for (j = 1; j <= 5; j++)
+
+✔ 5 vezes
+
+21. Tabela (execução passo a passo)
+
+Valores iniciais:
+
+x = 5, y = 10, z = 7
+1) x++
+x = 6
+2) y *= (z++ + 2)
+z++ usa 7 → depois z vira 8
+y = 10 * (7 + 2) = 90
+3) y = !x
+x = 6 → verdadeiro
+!6 = 0
+✔ y = 0
+4) z = (x % 2) + --y
+x % 2 = 0
+--y = -1
+✔ z = -1
+5) z = (x == y)
+x = 6, y = -1 → falso
+✔ z = 0
+6) !z
+z = 0
+✔ !0 = 1
+7) z = x % 8
+6 % 8 = 6
+✔ z = 6
