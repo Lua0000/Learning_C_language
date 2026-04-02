@@ -179,13 +179,26 @@ R =
 ```c
 #include <stdio.h>
 
-int main(void) {
-    int i= 0;
-    while (i <= 255)
-    {
-        i = i + 1;
+int main(void)
+{
+    int i = 0;
+    int C;
+    while(i < 255){
+        i++;
         printf("%d -> %c\n", i, (char)i);
+        if (i == 20 || i == 40 || i == 60 || i == 80 || i == 100 || 
+            i == 120 || i == 140 || i == 160 || i == 180 || i == 200 ||
+        i == 220 || i == 240)
+        {
+            printf("Digite C e pressione <enter> para continuar!\n");
+            scanf("%s", &C);
+            if(C != 'c' || C != 'C') {
+                continue;
+            }
+            
+            
+        } 
+        
     }
-     
 }
 ````
