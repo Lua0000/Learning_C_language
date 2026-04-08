@@ -42,6 +42,7 @@ Foco em aprender a Sintaxe da linguagem, demonstrar, na prática, meu progresso 
 
 * Linguagem C
 * Compilador GCC
+* Makefile
 
 ---
 
