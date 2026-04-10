@@ -35,6 +35,7 @@ Foco em aprender a Sintaxe da linguagem, demonstrar, na prática, meu progresso 
 * 📂 Capítulo 4 — ✅ Concluído
 * 📂 Capítulo 5 — ✅ Concluído
 * 📂 Capítulo 6 — ✅ Concluído (Fiz os exercicios deste capitulo de outra forma)
+* 📂 Capítulo 7 — ✅ Concluído (Fiz os exercicios deste capitulo de outra forma)
 
 ---
 
