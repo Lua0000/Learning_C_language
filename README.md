@@ -7,7 +7,7 @@
   <img src="https://github.com/user-attachments/assets/f0c5bee6-0b3d-48ae-84df-69d565fdd659" width="250"/>
 </div>
 
----
+
 
 ## Sobre o repositório
 
@@ -20,7 +20,7 @@ Aqui você encontrará:
 * ✔️ Organização por capítulos
 * ✔️ Código comentado para aprendizado
 
----
+
 
 ##  Objetivo
 
@@ -35,10 +35,13 @@ Foco em aprender a Sintaxe da linguagem, demonstrar, na prática, meu progresso 
 * 📂 Capítulo 3 — ✅ Concluído
 * 📂 Capítulo 4 — ✅ Concluído
 * 📂 Capítulo 5 — ✅ Concluído
-* 📂 Capítulo 6 — ✅ Concluído (Fiz os exercicios deste capitulo de outra forma)
-* 📂 Capítulo 7 — ✅ Concluído (Fiz os exercicios deste capitulo de outra forma)
+* 📂 Capítulo 6 — ✅ Concluído 
+* 📂 Capítulo 7 — ✅ Concluído 
 * 📂 Capítulo 8 — ✅ Concluído
----
+* 📂 Ponteiros  — ✅ Concluído
+* 📂 Struct     — ✅ Concluído
+* 📂 I/O files  — ✅ Concluído
+
 
 ## Tecnologias
 
@@ -46,7 +49,7 @@ Foco em aprender a Sintaxe da linguagem, demonstrar, na prática, meu progresso 
 * Compilador GCC
 * Makefile
 
----
+
 
 ## Observação
 
