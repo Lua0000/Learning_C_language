@@ -1,0 +1,9 @@
+| Operação     | Exemplo           | Descrição  |                                                                                                   |
+| ------------ | ---------------- | --------------- ----------------------------------------------------------------------------------------------------------- |
+| Atribuição   | `ptr = &x`       | Atribui ao ponteiro o endereço de uma variável. Para indicar que não aponta para nada, pode-se usar `NULL`. |
+| Incremento   | `ptr = ptr + 2`  | Avança o ponteiro em `2 * sizeof(tipo)` bytes na memória.                                                   |
+| Decremento   | `ptr = ptr - 10` | Retrocede o ponteiro em `10 * sizeof(tipo)` bytes na memória.                                               |
+| Apontado por | `*ptr`           | Acessa o valor armazenado no endereço apontado pelo ponteiro.                                               |
+| Endereço de  | `&ptr`           | Retorna o endereço de memória onde o próprio ponteiro está armazenado.                                      |
+| Diferença    | `ptr1 - ptr2`    | Calcula a diferença em número de elementos entre dois ponteiros.                                            |
+| Comparação   | `ptr1 > ptr2`    | Compara endereços para verificar a ordem relativa na memória.                                               |
