@@ -39,7 +39,7 @@ Foco em aprender a Sintaxe da linguagem, demonstrar, na prática, meu progresso 
 * 📂 Capítulo 7 — ✅ Concluído 
 * 📂 Capítulo 8 — ✅ Concluído
 * 📂 Ponteiros  — ✅ Concluído
-* 📂 Struct     — ✅ Concluído
+* 📂 Structfile — ✅ Concluído
 * 📂 I/O files  — ✅ Concluído
 
 
