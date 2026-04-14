@@ -1,9 +1,10 @@
-<div align="center">
+
 
 # 📘 Linguagem C — Luís Damas & Beej
 
-<img src="https://github.com/user-attachments/assets/51904b3d-f985-40ea-afbe-de85cf419848" alt="Capa do livro" width="250"/>
-
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/51904b3d-f985-40ea-afbe-de85cf419848" width="250"/>
+  <img src="https://github.com/user-attachments/assets/f0c5bee6-0b3d-48ae-84df-69d565fdd659" width="250"/>
 </div>
 
 ---
